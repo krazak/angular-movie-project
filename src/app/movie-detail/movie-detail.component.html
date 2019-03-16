@@ -1,0 +1,15 @@
+<div *ngIf="movie">
+
+  <h2>{{movie.title | uppercase}}</h2>
+  <div><span>id: </span>{{movie.episode_id}}</div>
+  <br />
+  <div><span>director: </span>{{movie.director}}</div>
+  <br />
+  <div><span>producer: </span>{{movie.producer}}</div>
+  <br />
+  <div><span>release date: </span>{{movie.release_date}}</div>
+  <br />
+  <div><span>description: </span>{{movie.opening_crawl}}</div>
+
+  <button (click)="goBack()">go back</button>
+</div>
